@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+         <!-- Lien CSS de Swiper -->
+         <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+        
+         <!-- Lien CDN de Font Awesome -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      
+         <!-- Lien du fichier CSS personnalisé -->
+      
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dash.css">
+    <!-- <link rel="stylesheet" href="../css/nav2.css"> -->
+
+    <title>Transport-Dash</title>    
+
+    <style>
+        .q {
+            font-size: 15px; /* Changé de 10px à 20px pour une meilleure lisibilité */
+            color: #666;
+        }
+        .title {
+                 margin-bottom: 5px;
+                 font-size: 20px;
+                 color: #666;
+                 text-align: center
+                }
+
+                .paragraphe-analyse {
+    background-color: #f4f4f4;
+    border-left: 4px solid #8e44ad;
+    padding: 20px;
+    margin-top: 20px; /* Espace au-dessus de l'analyse pour la séparer du graphique */
+    font-size: 12px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+    
+    </style>
+
+</head>
+
+
+        <body>
+           
+  
+        
+        <!-- Section en-tête commence ici -->
+        
+        <section class="header">
+        
+            <a href="../home.php" class="logo">FezCity</a>
+
+           <nav class="navbar">
+
+
+            <a href="analyse.html">
+                <i class="fas fa-chart-line"></i>
+               Analyse
+               
+             </a>
+             <a href="tourism.html">
+                <i class="fas fa-suitcase"></i>
+                Tourisme
+               
+             </a>
+             <a href="hebergement.html">
+                <i class="fas fa-bed"></i>
+                Hébergement</a>
+             <a href="restauration.html">
+                <i class="fas fa-utensils"></i>
+                Rèstauration</a>
+
+             <a href="transport.html">
+                <i class="fas fa-car"></i>
+                Transport</a>  
+
+             <a href="">
+                  
+                      
+             </a>  
+             <a href="../home.php">
+                <i class="fas fa-door-open"></i>
+                    <i class="fas fa-arrow-left"></i>
+                  
+                </a>  
+           </nav>
+           <div id="menu-btn" class="fas fa-bars"></div>
+        
+        </section>          
+
+ 
+        <br>
+        <br>
+        <br>
+
+
+        <div class="main">
+            <div>
+                <br>
+                <br>
+                <br>
+
+            <div class="charts-container">
+                <div class="chart">
+                    <h2 class="title">Evolution du nombre de taxis à Fès entre 2010 et 2021</h2>
+                    <canvas id="chart9"></canvas>
+                    <br>
+                    <br>
+                    <div class="paragraphe-analyse">
+                        <p> Le diagramme montre une croissance régulière du nombre total de taxis à Fès de 350 en 2010 à 950 en 2021, avec des augmentations annuelles variant entre 3,45% et 21,74%. Les années avec les taux de croissance les plus élevés, comme 2014, reflètent probablement une demande croissante de services de transport. Cependant, la croissance ralentit vers la fin de la période, suggérant peut-être une stabilisation du marché ou d'autres facteurs influençant la demande de taxis.</p>
+                    </div>
+                </div>
+                
+                <div class="chart doughnut-chart">
+                    <h2 class="title">Evolution des investissements dans les infrastructures au Maroc (2010-2023)</h2>
+                    <canvas id="chart10"></canvas>
+                    <div class="paragraphe-analyse">
+                        <p>Les investissements dans les routes ont augmenté considérablement, atteignant 12090 millions MAD en 2023, tandis que ceux dans les transports en commun ont également progressé régulièrement, culminant à 3030 millions MAD la même année. Cet engagement continu reflète l'importance accordée au développement des infrastructures de transport pour stimuler la croissance économique et améliorer la mobilité à Fès.
+                        </p>
+                        <br>
+                    </div>
+                </div>
+            </div>  
+            <div class="charts-container">
+                <div class="chart">
+                    <h2 class="title"> Répartition modale du transport à Fès</h2>
+                    <canvas id="chart11" width="250" height="250"></canvas>
+                    <div class="paragraphe-analyse">
+                      
+                      <p> Le diagramme illustre que les grands taxis et les bus sont les modes de transport les plus utilisés, chacun représentant 30% de l'utilisation, suivis par les petits taxis à 25%. Les trains sont moins utilisés, représentant seulement 15% de l'utilisation totale. Cette répartition suggère une dépendance significative aux taxis et aux bus pour les déplacements à Fès, tandis que le transport ferroviaire est moins préféré.</p>
+                    </div>
+
+                </div>
+                
+                
+                <div class="chart doughnut-chart">
+                    <h2 class="title"> Evolution du trafic ferroviaire au Maroc (2010-2023)</h2>
+                    <canvas id="chart12"  width="250" height="250"></canvas>
+                    <div class="paragraphe-analyse">
+                        <p>Le nombre total de voyageurs par an est passé de 1,50 million en 2010 à 2,90 millions en 2023, avec une augmentation constante. Le nombre de trains par jour est resté constant à 80, tandis que le nombre total de quais est passé de 4 à 6 au fil des ans. La superficie totale des gares est également en augmentation, passant de 8000 m² en 2010 à 10600 m² en 2023, tandis que le taux de satisfaction moyen des clients a augmenté progressivement, atteignant 88% en 2023.   
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>  
+    
+
+
+<!-- Section pied de page commence ici -->
+
+<section class="footer">
+
+    <div class="box-container">
+ 
+       <div class="box">
+          <h3>Liens rapides</h3>
+          <a href="../home.php"> <i class="fas fa-angle-right"></i> Accueil</a>
+          <a href="../about.php"> <i class="fas fa-angle-right"></i> À propos</a>
+          <a href="../hebergement.php"> <i class="fas fa-angle-right"></i> Hèbergement</a>
+          <a href="../restauration.php"> <i class="fas fa-angle-right"></i> Rèstauration</a>
+          <a href="../transport.php"> <i class="fas fa-angle-right"></i> Transport</a>
+          <a href="analyse.html"> <i class="fas fa-angle-right"></i>Dashboard</a>
+       </div>
+ 
+ 
+       <div class="box">
+          <h3>Coordonnées</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +212 06 30 38 81 37 </a>
+          <a href="#"> <i class="fas fa-envelope"></i> youssef.berrissoul@usmba.ac.ma </a>
+          <a href="#"> <i class="fas fa-envelope"></i> berrissoul999@gmail.com </a>
+          <a href="#"> <i class="fas fa-map"></i>Maroc , Fès, 30000  </a>
+          
+         
+       </div>
+ 
+       <div class="box">
+          <h3>Suivez-nous</h3>
+          <a href="https://www.facebook.com/profile.php?id=100044649818171&mibextid=2JQ9oc"> <i class="fab fa-facebook-f"></i> Facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
+          <a href="https://www.instagram.com/you_ssef_03?utm_source=qr&igshid=enh3ejY0OWNya2t4"> <i class="fab fa-instagram"></i> Instagram </a>
+          <a href="#"> <i class="fab fa-linkedin"></i> LinkedIn </a>
+       </div>
+ 
+    </div>
+ 
+    <div class="credit"> Créé par <span>Mr. Youssef_MoMo</span> | Tous droits réservés ! </div>
+ 
+ </section>
+        </div>
+
+        
+        
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="../api/chart3.js" defer></script>
+  
+</body>
+
+
+<!-- Lien JS de Swiper -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+<!-- Lien du fichier JS personnalisé -->
+<script src="../js/script.js"  defer></script>
+</html>
